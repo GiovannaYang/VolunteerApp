@@ -19,7 +19,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="志愿项目"
+                android:text="用户管理"
                 android:textColor="#FFFFFF"
                 android:textSize="22sp"
                 android:layout_weight="1"
