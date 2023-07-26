@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 状态栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="center_vertical"
+        android:background="#6750A3"
+        android:padding="16dp">
+
+        <!-- 状态栏标题 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="个人中心"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <!-- 内容区域 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+        <!-- 大的Name -->
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <!-- 小字Pid -->
+        <TextView
+            android:id="@+id/tv_pid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#888888"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 功能按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 管理人员按钮 -->
+            <TextView
+                android:id="@+id/btn_manage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="管理人员"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/border"/>
+            <TextView
+                android:id="@+id/btn_join"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="我的项目"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/btn_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="编辑账号"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/btn_exit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="退出登录"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/btn_delete"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="删除账号"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/border"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- 导航栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#6750A3">
+
+        <!-- 导航栏按钮1 -->
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="项目"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/transparent" />
+
+        <!-- 导航栏按钮2 -->
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="新闻"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="视频"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/transparent" />
+
+        <!-- 导航栏按钮3 -->
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="我的"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+</LinearLayout>
